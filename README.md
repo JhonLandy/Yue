@@ -26,6 +26,16 @@ submmitBtn.click = () => {
 }
 ```
 
+### 演示效果
+
+点击提交按钮
+
+![验证2](D:\project\Yue\验证2.jpg)
+
+正在输入内容，当失去焦点时，也触发验证
+
+![验证1](D:\project\Yue\验证1.jpg)
+
 ## 功能
 
 ### 验证规则
@@ -58,7 +68,7 @@ const form = new Yue({
 })
 console.log(form.$data)// {chapterItem: null}
 ```
-### 有内置样式提供使用
+### 有内置样式提供使用（基于flex布局）
 - 按钮
   1. chapter-btn-normal（一般按钮样式）
   2. chapter-btn-group（一组按钮）
