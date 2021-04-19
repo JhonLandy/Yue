@@ -33,7 +33,7 @@ git clone https://github.com/JhonLandy/Yue.git
 npm install
 nodemon index
 ```
-open 127.0.0.1:4000/chapterAdd
+open <a href="#">127.0.0.1:4000/chapterAdd</a>
 - 点击提交按钮
 
 ![验证2](/验证2.jpg)
