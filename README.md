@@ -28,7 +28,12 @@ submmitBtn.click = () => {
 
 ### 演示效果
 - 演示操作
+```bash
+git clone https://github.com/JhonLandy/Yue.git
+npm install
+nodemon index
 ```
+open 127.0.0.1:4000/chapterAdd
 git clone
 ```
 - 点击提交按钮
