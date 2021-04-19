@@ -34,8 +34,6 @@ npm install
 nodemon index
 ```
 open 127.0.0.1:4000/chapterAdd
-git clone
-```
 - 点击提交按钮
 
 ![验证2](/验证2.jpg)
