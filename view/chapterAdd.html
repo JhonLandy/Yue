@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>用章管理申请填写</title>
+	<link href="/chapter/css/chapter.css" rel="stylesheet" type="text/css">
+	<script src="/sea.js"></script>
+	<script src="/jquery.min.js" ></script>
+</head>
+<body>
+	<div class="chapter-nav">
+		<div class="alert alert-success">保存文件成功</div>
+		<div class="chapter-btn-group">
+			<button type="button" class="chapter-btn backbtn" onclick="window.history.back()">返回</button>
+			<button type="button" class="chapter-btn chapter-btn-normal sumbtn" id="sumbit">提交</button>
+		</div>
+	</div>
+	<div class="chapter-content">
+		<div class="chapter-head">
+			xxx申请表
+		</div>
+		<form class="chapter-form" id="formChapter" enctype="application/x-www-form-urlencoded"> 
+			<div class="chapter-group">
+				<div class="chapter-row chapter-row-group">
+					<label class="chapter-title">申请部门</label>
+					<div class="chapter-col">
+						<input class="chapter-input" y-modal="department" y-valid="empty" maxlength="255">
+						<div class="err-info"></div>
+					</div>
+				</div>
+				<div class="chapter-row chapter-row-group">
+					<label class="chapter-title">申请日期</label>
+					<div class="chapter-col">
+						<input class="chapter-input" y-modal="applyDate" id='applyDate' readonly="readonly">
+						<div class="err-info"></div>
+					</div>
+				</div>
+			</div>
+			<div class="chapter-group">
+				<div class="chapter-row chapter-row-group">
+					<label class="chapter-title">文件名称</label>
+					<div class="chapter-col">
+						<input class="chapter-input" y-modal="filename" y-valid="empty" maxlength="255">
+						<div class="err-info"></div>
+					</div>
+				</div>
+			</div>
+			<div class="chapter-group chapter-wrap">
+				<div class="chapter-row chapter-row-group">
+					<label class="chapter-title">公司名称</label>
+					<div class="chapter-col">	
+						<input class="chapter-input" y-modal="company" y-valid="empty" placeholder="(备注：签约公司名称)" maxlength="255">
+						<div class="err-info"></div>
+					</div>
+				</div>
+				<div class="chapter-row chapter-row-group">
+					<label class="chapter-title">联系人</label>
+					<div class="chapter-col">
+						<input class="chapter-input" y-modal="concator" y-valid="empty" placeholder="(备注：签约公司联系人)" maxlength="255">
+						<div class="err-info"></div>
+					</div>
+				</div>
+				<div class="chapter-row chapter-row-group">
+					<label class="chapter-title">联系电话</label>
+					<div class="chapter-col">
+						<input class="chapter-input" y-modal="phone" y-valid="empty|phone" placeholder="(备注：签约公司联系电话)" maxlength="255">
+						<div class="err-info"></div>
+					</div>
+				</div>
+			</div>
+			<div class="chapter-group">
+				<div class="chapter-row chapter-row-group">
+					<label class="chapter-title">用章事项</label>
+					<div class="chapter-col">
+						<input class="chapter-input" y-modal="chapterItem" y-valid="empty" maxlength="255">
+						<div class="err-info"></div>
+					</div>
+				</div>
+			</div>
+			<div class="chapter-group">
+				<div class="chapter-row chapter-row-group">
+					<label class="chapter-title">印章名称</label>
+					<div class="chapter-col">
+						<input class="chapter-input" y-modal="type" y-valid="empty" maxlength="255">
+						<div class="err-info"></div>
+					</div>
+				</div>
+			</div>
+			<div class="chapter-group">
+				<div class="chapter-row chapter-row-group">
+					<label class="chapter-title">申请人</label>
+					<div class="chapter-col">
+						<input class="chapter-input" y-modal="creater" y-valid="empty" maxlength="255">
+						<div class="err-info"></div>
+					</div>
+				</div>
+				<div class="chapter-row chapter-row-group">
+					<label class="chapter-title">份数</label>
+					<div class="chapter-col">
+						<input class="chapter-input" y-modal="number" y-valid="empty|number" maxlength="255">
+						<div class="err-info"></div>
+					</div>
+				</div>
+			</div>
+			<div class="chapter-group">
+				<div class="chapter-row chapter-row-group">
+					<label class="chapter-title">审批意见</br>(部门负责人)</label>
+					<div class="chapter-col">
+						<textarea class="chapter-textarea" y-modal="departAdult" y-valid="empty" maxlength="255"></textarea>
+						<div class="err-info"></div>
+					</div>
+				</div>
+			</div>
+			<div class="chapter-group">
+				<div class="chapter-row chapter-row-group">
+					<label class="chapter-title">审批意见</br>(主管副总经理)</label>
+					<div class="chapter-col">
+						<textarea class="chapter-textarea" y-modal="mainAdult"  y-valid="empty" maxlength="255"></textarea>
+						<div class="err-info"></div>
+					</div>
+				</div>
+			</div>
+			<div class="chapter-group">
+				<div class="chapter-row chapter-row-group">
+					<label class="chapter-title">审批意见</br>(总经理)</label>
+					<div class="chapter-col">
+						<textarea class="chapter-textarea" y-modal="generalAdult" y-valid="empty" maxlength="255" ></textarea>
+						<div class="err-info"></div>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript">
+		seajs.use("/js/chapterAdd.js"); 
+	</script>
+</body>
+</html>

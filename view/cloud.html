@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>文件管理</title>
+    <link href="/cloud/css/index.css" rel="stylesheet" type="text/css">
+	<script src="/sea.js"></script>
+	<script src="/jquery.min.js" ></script>
+</head>
+<script type="text/javascript">
+    seajs.use("/cloud/js/index.js");
+</script>
+<body>
+    <div class="wrap">
+    	<div class="main">
+    		<div class="main-right" id="main_Right">
+    			<div class="content" id="content">
+    				<div class="toolbar clearfix" id="tool">
+   						<div class="float-l">
+   							<p class="back-btn" id="back_btn" data-event="back">返回上一级<span class="right">&Iota;</span></p>
+   						</div>
+   						<div class="float-l">
+   							<ul class="full-path" id="full_path">
+   								<!-- <li class="path"><span class="path-text">文档1</span><span class="right">&gt;</span></li>
+   								<li class="path"><span class="path-text">文档2</span><span class="right">&gt;</span></li>
+   								<li class="path"><span class="path-text">文档3</span></li> -->
+   							</ul>
+   						</div>
+   						<div class="float-r tool-search">
+   							<input class="search-text" id="search_Text" placeholder="请输入搜索内容">
+   							<span class="search-btn layui-icon" id="search_btn">&#xe615;</span>
+   						</div>
+   						<div class="float-r">
+   							<button class="layui-btn layui-btn-sm layui-btn-normal upload-btn layui-icon" id="upload_btn" data-event="upload">&#xe681;上传</button>
+   						</div>
+   						<div class="float-r">
+   							<button class="layui-btn layui-btn-sm layui-btn-normal new-btn layui-icon" id="new_btn" data-event="upload">&#xe654;新建文件夹</button>
+   						</div>
+					</div>
+   					<div class="total-title" id="title">
+   						<ul class="list-title clearfix">
+   							<li class="title option">&nbsp;</li>
+   							<li class="title name le-out">文件</li>
+   							<li class="title size">大小</li>
+   							<li class="title time">时间</li>
+   							<li class="title operate le-out">操作</li>
+   						</ul>
+					</div>
+					<div class="files overf-y-a" id="file" onselectstart="return false;">
+	    				<ol class="list-file" id="list_file">
+	    				</ol>
+    				</div>
+	   				<div class="footer" id="footer">
+	   					<ul class="footer-list clearfix">
+							<li class="foot all-checked float-l">
+								<div class="all-radio" id="checked_all">
+								</div>
+								<div class="btn-group">
+									<span>全选</span>
+									<button class="layui-btn layui-btn-xs layui-btn-primary del-btn" id="del_btn" data-event="del">删除</button>
+								</div>
+							</li>
+							<!-- <li class="foot btn-group float-l">
+							</li> -->
+							<li class="page float-r">
+								<ul class="clearfix" id="pager">
+								</ul>
+							</li>
+						</ul>
+	   				</div>
+    			</div>
+	    	</div>
+    		<div class="main-left overf-y-a" id="main_left" onselectstart="return false;">
+    			<ul class="list-type" id="list_type">
+    			</ul>
+    		</div>
+   		</div>
+ 	</div>
+</body>
+</html>

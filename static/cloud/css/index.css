@@ -1,0 +1,285 @@
+@charset "utf-8";
+boduy,div,ul,ol,li,p,a {margin:0;padding:0}
+ul,li{list-style:none}
+html,body,.wrap {
+	height:100%;
+}
+.main {
+	min-width:800px;
+	min-height:300px;
+	height:100%;
+	box-shadow: 0 0 1.5px #ccc;
+}
+/*******************左部分*****************/
+.main-left {
+	float:left;
+	width:10%;
+	height:100%;
+	background:rgb(252, 252,252);
+	box-shadow: 2px 0 2px #ccc;
+	
+}
+/**********菜单**********/
+.type {
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    cursor:pointer;
+}
+.active-type {
+	color:#2D8BEF;
+	background:#CCE5FF;
+}
+/**********菜单**********/
+
+/*********************左部分***************/
+
+
+/*********************右部分***************/
+
+
+.main-right {
+	float:right;
+	width:90%;
+	height:100%;
+	background:rgb(252, 252,252);
+}
+.content {
+	height:100%;
+	position:relative;	
+}
+.files {
+	position:relative;
+}
+
+.file {
+	width:100%;
+	height: 50px;
+    border-bottom: 0.5px solid rgba(204, 204, 204, 0.9);
+	cursor:pointer;
+}
+.file-check {
+	background-color:rgba(129, 183, 239, .3);
+}
+.div-mouse {
+	position:absolute;
+	background:rgba(129, 183, 239, .25);	
+}
+
+.active-file {
+    background:rgba(219, 219, 219, 0.3);
+}
+
+/* .file:hover {
+    background:rgba(219, 219, 219, 0.3);
+} */
+
+/*******操作栏*****/
+.toolbar {
+	line-height: 51px;
+	border-bottom: .5px solid rgba(204, 204, 204, 0.9);
+}
+.back-btn {
+	margin-left: 8px;
+	font-size:15px;
+	color:#2D8BEF;
+	cursor:pointer;
+}
+.path {
+	float:left;
+	font-size: 16px;
+	color:#867E7E;
+	cursor:pointer;
+}
+.path-text:hover {
+	color:#2D96F3;
+	text-decoration:underline;
+}
+.right {
+	padding:0 10px;
+	color:#7e7e7e;
+	vertical-align:middle;
+	font-size: 16px;
+	
+}
+.upload-btn {
+	margin-right: 8px;
+}
+.new-btn {
+	margin-right: 8px;
+}
+.tool-search {
+	position:relative;
+	display:inline-block;	
+	margin-right:15px;
+}
+.search-btn {
+	position:absolute;
+	right:10px;
+	color:#ccc;
+	cursor:pointer;
+}
+.search-btn:hover {
+	color:#2D96F3;
+}
+.search-text {
+	width:200px;
+	height:29px;
+	text-indent:10px;
+	vertical-align:middle;
+	border:1px solid #ccc;
+	border-radius:20px;
+}
+.search-text:focus {
+	box-shadow: 0 0 2px 1.5px #CCE5FF;
+}
+.search-text::-webkit-input-placeholder { /* WebKit browsers */
+  color: #ccc;
+  font-size: 13px;
+}
+
+.search-text::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #ccc;
+  font-size: 13px;
+}
+.search-text:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #ccc;
+  font-size: 13px;
+}
+/*******操作栏*****/
+
+/*******标题******/
+.total-title {
+	border-bottom: .5px solid rgba(204, 204, 204, 0.9);
+}
+.title{
+	float:left;	
+	font-weight:bold;
+	line-height: 50px;
+}
+/*******标题******/
+
+
+/*****文件部分*****/
+.property{
+	float:left;	
+	line-height: 50px;
+	min-height:1px;
+}
+.radio {
+   width:15px;
+   height:15px;
+   display:inline-block;
+   vertical-align:middle;
+   border: .5px solid #ccc;
+   border-radius:3px;
+   background:rgb(255,255,255);
+   cursor:pointer;
+}
+.btn-group {
+	position:absolute;
+	top:19px;
+	left:70%;
+	width:200px;
+	vertical-align:middle;
+	text-align:left;
+	line-height:15px
+}
+.option {
+	width:5%;
+	text-align:center;
+}
+.name {
+	width:35%;
+}
+
+.size {
+	width:10%;
+}
+.time {
+	width:20%;
+}
+.operate {
+	width:30%;
+}
+/*****文件部分*****/
+
+
+/******底部******/
+.footer{
+	width:100%;
+	position:absolute;
+	bottom:0;
+	border-top: .5px solid rgba(204, 204, 204, 0.9);
+}
+.foot{
+	line-height: 59px;
+}
+.all-checked {
+	position:relative;
+	width:5%;
+	text-align: center;
+}
+.all-radio {
+	position:relative;
+	width:15px;
+    height:15px;
+    display:inline-block;
+    vertical-align:text-bottom;
+    border: .5px solid #ccc;
+    border-radius:3px;
+    background:rgb(255,255,255);
+    cursor:pointer;
+}
+
+.page {
+	margin-right:15px;
+	padding:20px 10px;
+}
+.page-index {
+	float:left;
+	width:20px;
+	height:20px;
+	margin:0 2.5px;
+	color: rgb(1,1,1);
+	font-size:10px;
+	text-align:center;
+	line-height:20px;
+	cursor:pointer;
+	border: .5px solid rgba(204,204,204,.5);
+	border-radius: 5px;
+	background:rgb(255,255,255);
+}
+/******底部******/
+
+/*********************右部分***************/
+.float-l {
+	float:left;
+}
+.float-r {
+	float:right;
+}
+.check {
+	background:#2D8BEF;
+}
+.now {
+	color: rgb(255,255,255);
+	background:#1E9FFF;
+}
+.clearfix:after{
+   content:"";/*加一段内容*/
+   display:block;/*让生成的元素以块级元素显示，占满剩余空间*/
+   height:0;/*避免生成的内容破坏原有布局高度*/
+   clear:both;/*清除浮动*/
+   visibility:hidden;/*让生成的内容不可见*/
+}
+.overf-y-a {
+	overflow-y:auto;
+}
+.files::-webkit-scrollbar {display:none} 
+.main-left::-webkit-scrollbar {width:3px;height:3px;background-color:#F5F5F5;} 
+/*定义滚动条轨道 内阴影+圆角*/ 
+.main-left::-webkit-scrollbar-track {-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);border-radius:10px;background-color:rgb(244,244,244);} 
+/*定义滑块 内阴影+圆角*/ 
+.main-left::-webkit-scrollbar-thumb {border-radius:10px;-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3);background:rgb(191,191,191);}
+.le-out{overflow: hidden;white-space: nowrap;text-overflow: ellipsis}/*内容超长省略号*/
