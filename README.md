@@ -1,1 +1,72 @@
-"# Yue" 
+# 表单插件
+
+## How to use simplelly?
+
+### html
+```html
+<form class="chapter-form" id="formChapter" enctype="application/x-www-form-urlencoded">
+  ....
+</form>
+```
+
+### javascript
+```js
+const Yue = require("./Yue.js")//sea.js模块化语法，使用时请注意
+
+const form = new Yue({
+  els: 'formChapter'
+})
+const submmitBtn = document.querySeletor("#sumbit")
+
+submmitBtn.click = () => {
+  const isPass = form.validtor()//提交时，触发表单验证
+  if (isPass) {
+    //todo
+  }
+}
+```
+
+## 功能
+
+### 验证规则
+如果你要验证手机号码、邮箱，只要在html中这样使用即可
+```html
+<input class="chapter-input" y-valid="phone|email" maxlength="255">
+```
+如果只想验证手机号码
+```html
+<input class="chapter-input" y-valid="phone" maxlength="255">
+```
+如果你想要更多验证规则验证，可以在js脚本里这样定义：
+```js
+from.valids['customer'] = function() {
+  if (true) {
+    return true//验证通过返回true，否则false
+  }
+}
+```
+
+### 数据绑定
+just like the Vue.和vue的v-modal指令一样的
+```html
+<input class="chapter-input" y-modal="chapterItem" y-valid="empty" maxlength="255">
+```
+会自动生成数据的属性`chapterItem`
+```js
+const form = new Yue({
+  els: 'formChapter'
+})
+console.log(form.$data)// {chapterItem: null}
+```
+### 有内置样式提供使用
+- 按钮
+  1. chapter-btn-normal（一般按钮样式）
+  2. chapter-btn-group（一组按钮）
+  3. chapter-btn（基础样式）
+- 表单组件（input,select等）
+  1. chapter-form（表单）
+  2. chapter-group（一组组件）
+  3. chapter-row（一行的组件排列样式）
+  4. chapter-input
+  5. chapter-textarea 
+
