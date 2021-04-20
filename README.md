@@ -95,4 +95,4 @@ Yue.prototype.init = function () {
     if(this.$config.data)setData(this.$data, this.$config.data);//填充数据并渲染数据
 };
 ```
-<a href="/Yue.js">源码地址</a>
+<a href="/static/js/Yue.js">源码地址</a>
