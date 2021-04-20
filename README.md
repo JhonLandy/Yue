@@ -85,4 +85,14 @@ console.log(form.$data)// {chapterItem: null}
   3. chapter-row（一行的组件排列样式）
   4. chapter-input
   5. chapter-textarea 
-
+  
+## 核心源码
+```js
+Yue.prototype.init = function () {
+    buildData.call(this);//扫描y-modal构造数据模型(Modal)
+    obServer(this.$data);//数据劫持(ViewModal)
+    complie.call(this);//编译,给特定组件(比如带有y-modal就是特定主键,可扩展)添加订阅者(View)
+    if(this.$config.data)setData(this.$data, this.$config.data);//填充数据并渲染数据
+};
+```
+<a href="/Yue.js">源码地址</a>
